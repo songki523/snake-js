@@ -1,0 +1,26 @@
+.d-pad{
+    margin: auto;
+    width: 12em;
+    height: 12em;
+    position: relative;
+}
+#d-up{
+    left: 3.7em;
+    top: 0;
+    position: absolute;
+}
+#d-down{
+    left: 3.7em;
+    bottom: 0;
+    position: absolute;
+}
+#d-left{
+    top: 3.5em;
+    left: 0;
+    position: absolute;
+}
+#d-right{
+    top: 3.5em;
+    right: 0;
+    position: absolute;
+}

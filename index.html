@@ -1,7 +1,36 @@
-<h1>SNAKE</h1>
-<h2>Snake Length: <span id="snake-length"></span></h2>
-<h2>Apples Eaten: <span id="apples-eaten"></span></h2>
-<h3>Subject Size: <input type="text" name="subject-size" id="subject-size" value="20"></h3>
-<h3>Playground Size: <input type="text" name="playground-size" id="playground-size" value="20"></h3>
-<canvas id="game-console" width="400" height="400"></canvas>
-<script src="./scripts/snake.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="./styles/default.css">
+    <title>Snake JS</title>
+</head>
+<body>
+    <canvas id="game-console"></canvas>
+
+    <div class="d-pad">
+        <a id="d-left" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">arrow_back</i></a>
+        <a id="d-down" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">arrow_downward</i></a>
+        <a id="d-up" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">arrow_upward</i></a>
+        <a id="d-right" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">arrow_forward</i></a>
+    </div>
+
+    <p>
+        Snake Length: <span id="snake-length"></span>
+        Snake x: <span id="snake-x"></span>
+        Snake y: <span id="snake-y"></span>
+        Apples Eaten: <span id="apples-eaten"></span>
+        Apple x: <span id="apple-x"></span>
+        Apple y: <span id="apple-y"></span>
+    </p>
+    
+    <script src="./scripts/movingObj.js"></script>
+    <script src="./scripts/snake.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+</body>
+</html>
+
